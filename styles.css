@@ -1,0 +1,74 @@
+body {
+
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #AA9E9EC4;
+   
+
+}
+#login-section{
+  
+  background-color:#666459;
+  border: 5px solid;
+  border-radius: 20px;
+  color: #FFFCF0;
+}
+h1{
+  font-size: 60pt;
+  font-style: italic;
+  text-shadow:1px 2px 2px #8F607A;
+  text-align: center;
+}
+img{
+  
+  width: 420px;
+  height: 520px;
+  border: solid;
+  border-width: 2px;
+}
+table{
+  background-color: #A48F336B;
+}
+#login-section{
+  border:dotted;
+  text-align: center;
+}
+#registration-section{
+  border:dotted;
+  text-align: center;
+}
+#registration-section:hover{
+  background: #7B7E9D;
+}
+.a{
+  text-align: center;
+  text-shadow: 1px 1px #710540;
+  font-size: 20px;
+  font-style: impact;
+  
+}
+.products, .cart {
+   
+    float: left;
+    width: 45%;
+    margin: 0 2.5%;
+}
+
+.product,.cart-item{
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: #008CBA;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+button:hover {
+    background-color: #005f6b;
+}
