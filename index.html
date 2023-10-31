@@ -1,0 +1,137 @@
+<html>
+<head>
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body><br><br>
+   <h1 >..STYLISH SHOES..</h1><br><br>
+     <div id="login-section" class="hidden">
+         <h2 style="font-style: oblique">...LOGIN...</h2><br>
+          <form onsubmit="return login">
+              <label class="a"> Email: <input type="text" id="username" placeholder="Username" required></label><br><br>
+              <label class="a">Password: <input type="password" id="password" placeholder="Password" required></label><br><br>
+              <button type="submit">Login</button>
+          </form>
+          <p>Don't have an account? <a href="#" onclick="showRegistration()">Register here</a></p>
+      </div><br><br>
+
+ 	  <div id="registration-section" class="hidden"><br><br>
+ 	  
+      <h2 style="font-style:oblique">..REGISTER..</h2><br>
+        
+      <form onsubmit="return register()">
+          
+        <label class="a">Name: <input type="text" id="name" placeholder="First Name" required></label>
+    
+        <label><input type="text" id="regUsername" placeholder="Second Name" required></label><br><br>
+    
+        <label class="a">Password: <input type="password" id="regPassword" placeholder="Password" required></label>
+   
+        <label><input type="password" id="regPassword" placeholder="Conform Password" required></label><br><br>
+        
+        <label class="a"> Email: <input type="email" id="regEmail" placeholder="@gmail.com" required></label><br><br>
+
+        <label class="a">Male <input type="radio" name="gender" value="Male"></label>
+        
+        <label class="a">Female <input type="radio" name="gender" value="Female"></label>
+        
+        <label class="a">Other <input type="radio" name="gender" value="Other"></label><br><br>
+   
+        <label class="a">DOB: <input type="date"><br><br>
+   
+        <label class="a">Mobile No: <input type="number" placeholder="+91 Xxxxxxxxxxx"></label><br><br>
+   
+        <button type="submit">Register</button>
+      </form>
+
+      <p>Already have an account? <a href="#" onclick="showLogin()">Login here</a></p><br><br>
+      
+    </div>
+    
+    <hr>
+    
+    <div id="main-section" class="hidden">
+      <h1>Shopping Cart</h1>
+
+    	<div class="products">
+	    <table border="1" cellpadding="0" cellspacing="0">
+	      
+	      <tr>
+	      <th>
+        <div class="product">
+          <img src="shoe1.jpg">
+          <h2>Puma Shoes Men</h2>
+          <p>Price: 1899Rs</p>
+          <button class="add-to-cart" onclick="addToCart('Product 1', 1899)">Add to Cart</button>
+        </div>
+        </th>
+        
+        <th>
+        <div class="product">
+          <img src="shoe2.jpg">
+          <h2>Campus shoes</h2>
+            <p>Price: 1999Rs</p>
+          <button class="add-to-cart" onclick="addToCart('Product 2', 1999)">Add to Cart</button>
+            
+        </div>
+        </th>
+        </tr>
+        
+        
+        <tr>
+        <th>
+          <div class="product">
+          <img src="shoe3.jpg">
+
+          <h2>Us Polo</h2>
+          <p>Price: 2999Rs</p>
+          <button class="add-to-cart" onclick="addToCart('Product 3', 2999)">Add to Cart</button>
+    	  </div>
+    	  </th>
+    	    
+    	  <th>
+    	    <div class="product">
+          <img src="shoe4.jpg">
+          <h2>Mr Shoes New</h2>
+          <p>Price: 3129Rs</p>
+          <button class="add-to-cart" onclick="addToCart('Product 4', 3129)">Add to Cart</button>
+          </div>
+        </th>
+        </tr>
+        
+        
+        <tr>
+        <th>
+          <div class="product">
+          <img src="shoe5.jpg">
+
+          <h2>New Balance Cricket Shoes</h2>
+          <p>Price: 2599Rs</p>
+          <button class="add-to-cart" onclick="addToCart('Product 5', 2599)">Add to Cart</button>
+        </div>
+        </th>
+        
+        <th>
+          <div class="product">
+          <img src="shoe6.jpg">
+          <h2>Cricket Shoes</h2>
+          <p>Price: 1599Rs</p>
+          <button class="add-to-cart" onclick="addToCart('Product 6', 1599)">Add to Cart</button>
+          </div>
+        </th>
+        </tr>
+        
+           
+        
+        <div class="cart">
+            <h2>Shopping Cart</h2>
+            <ul id="cart-items"></ul>
+            <p>Total: Rs<span id="total">0</span></p><br>
+            <button onclick="checksout()">Checkout</button><br><br><br><br>
+        </div>
+    </div>
+
+<script src="main.js"></script>
+
+</body>
+</html>
